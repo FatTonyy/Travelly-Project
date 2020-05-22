@@ -1,0 +1,109 @@
+/* global styles */
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@300&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Poppins", sans-serif;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+h1 {
+	font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+	font-size: 2rem;
+}
+h2 {
+	font-size: 4.8rem;
+}
+
+h3 {
+	font-size: 3rem;
+	font-weight: normal;
+}
+
+h4,
+h5 {
+	font-size: 2.8rem;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+button {
+	padding: 2rem 6rem;
+	background: #4c6e97;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.8rem;
+}
+
+/* nav section */
+.main-head {
+	background: #131c27;
+	color: #fff;
+}
+nav {
+	min-height: 10vh;
+	display: flex;
+	width: 90%;
+	margin: auto;
+	padding: 2rem;
+	flex-wrap: wrap;
+}
+
+nav ul {
+	display: flex;
+	flex: 1 1 40rem;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+#logo {
+	flex: 2 1 40rem;
+	font-family: "Pattaya", sans-serif;
+	font-weight: 400;
+}
+
+/* hero section */
+.hero {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+		url(./img/landing-page.jpg) no-repeat center center/cover;
+	min-height: 90vh;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.hero h3 {
+	padding: 5rem;
+}
+
+@media screen and (max-width: 932px) {
+	html {
+		font-size: 45%;
+	}
+	nav {
+		text-align: center;
+	}
+	#logo {
+		padding: 1rem;
+	}
+}
